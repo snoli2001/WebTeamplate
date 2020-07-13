@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'about',component:AboutComponent},
   {path: 'item/:id',component:ItemComponent},
   {path: 'search/:word',component:SearchComponent},
-  {path: '**',pathMatch:'full', redirectTo:'portafolio'},
+  {path: '', pathMatch:'full', redirectTo:'home'}
 ];
 
 @NgModule({
