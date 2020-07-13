@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {PageInfoService} from "./services/page-info.service";
+import {ProductsService} from "./services/products.service";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'webPagetemplate';
+  constructor(private pageInfoService: PageInfoService,public productsService: ProductsService) {
+  }
 }
